@@ -11,3 +11,15 @@
 - tweepy
 
 ## 使い方
+
+tweepyのインストール
+```
+pip install tweepy
+```
+
+dictionary.txtといった名前のファイルを作成し、中に、NGワードを書いていく。  
+
+実行
+```
+python main.py
+```
