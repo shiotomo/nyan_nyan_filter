@@ -10,7 +10,7 @@
 - python3
 - tweepy
 
-## 使い方
+## 環境構築
 
 tweepyのインストール
 ```
@@ -23,3 +23,39 @@ dictionary.txtといった名前のファイルを作成し、中に、NGワー�
 ```
 python main.py
 ```
+
+## 構成
+
+```
+main.py
+dictionary.txt
+README.md
+json
+  |
+  |----- token.json
+ 
+src
+  |
+  |--- filter.py
+  |--- mode.py
+  |--- reader.py
+  |--- recorder.py
+  |--- stream.py
+  |--- token.py
+```
+
+## モード
+
+- serverモード
+  
+  - ストリーミングによりNGワードを監視します
+ 
+- clientモード
+  
+  - 開発中
+  
+- update tokenモード
+  
+  - APIキーを更新します
+ 
+ 
