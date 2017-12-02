@@ -15,7 +15,7 @@ class Mode:
         print("1:server")
         print("2:client")
         print("3:update token")
-        print("another:update token")
+        print("another:exit")
         mode = input("=> ")
         return mode
 
