@@ -51,7 +51,7 @@ def main():
         print("----------------------------------\n")
         mode.update_token()
     else:
-        print("See yoo ...")
+        print("See you ...")
         pass
 
 

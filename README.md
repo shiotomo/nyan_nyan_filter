@@ -21,7 +21,7 @@ dictionary.txtといった名前のファイルを作成し、中に、NGワー�
 
 実行
 ```
-python main.py
+python3 main.py
 ```
 
 ## 構成
@@ -56,6 +56,6 @@ src
   
 - update tokenモード
   
-  - APIキーを更新します
+  - APIキーを更新するときに使うモードです。
  
  
