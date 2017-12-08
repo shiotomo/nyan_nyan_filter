@@ -1,6 +1,8 @@
 import os
 import tweepy
 
+from datetime import datetime
+
 from src.token import Token
 from src.recorder import Recorder
 from src.stream import StreamListener
@@ -30,6 +32,8 @@ def main():
     keys = reader.json_dir()
     api_key = token.get_key(keys)
 
+    api_key.update_status("にゃんにゃんフィルター起動!!\n" + datetime.now().strftime("%Y/%m/%d %H:%M:%S"))
+
     mode = Mode(api_key)
     select_number = mode.select()
 
@@ -53,6 +57,8 @@ def main():
     else:
         print("See you ...")
         pass
+
+    api_key.update_status("にゃんにゃんフィルター停止\n" + datetime.now().strftime("%Y/%m/%d %H:%M:%S"))
 
 
 if __name__ == '__main__':
