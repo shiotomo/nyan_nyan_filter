@@ -15,8 +15,6 @@ def nyan_nyan():
     print("---------------------- ver 1.0 ---")
     print("---------- Set up server ---------")
     print("----------------------------------")
-    print("Nyan nyan --------------------- OK")
-    print("Nyan nyan filter set up...")
 
 def main():
     nyan_nyan()
@@ -32,8 +30,6 @@ def main():
     keys = reader.json_dir()
     api_key = token.get_key(keys)
 
-    api_key.update_status("にゃんにゃんフィルター起動!!\n" + datetime.now().strftime("%Y/%m/%d %H:%M:%S"))
-
     mode = Mode(api_key)
     select_number = mode.select()
 
@@ -45,21 +41,12 @@ def main():
         print("----------------------------------\n")
         mode.server()
     elif (select_number == "2"):
-        print("select client !!")
-        print("Nyan nyan filter start !!")
-        print("----------------------------------\n")
-        mode.client()
-        pass
-    elif (select_number == "3"):
         print("select update token !!")
         print("----------------------------------\n")
         mode.update_token()
     else:
         print("See you ...")
         pass
-
-    api_key.update_status("にゃんにゃんフィルター停止\n" + datetime.now().strftime("%Y/%m/%d %H:%M:%S"))
-
 
 if __name__ == '__main__':
     main()

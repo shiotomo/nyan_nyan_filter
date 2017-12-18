@@ -13,8 +13,7 @@ class Mode:
         print("")
         print("Select mode")
         print("1:server")
-        print("2:client")
-        print("3:update token")
+        print("2:update token")
         print("another:exit")
         mode = input("=> ")
         return mode
@@ -27,10 +26,6 @@ class Mode:
                 stream.userstream()
             except:
                 pass
-
-    def client(self):
-        print("Sorry. develop now.")
-        pass
 
     def update_token(self):
         token = Token()
