@@ -19,6 +19,8 @@ pip install tweepy
 
 dictionary.txtといった名前のファイルを作成し、中に、NGワードを書いていく。  
 
+実行する前に、src/stream.pyの中を変更してください。
+
 実行
 ```
 python3 main.py
@@ -47,7 +49,7 @@ src
 ## モード
 
 - serverモード
-  - ストリーミングによりNGワードを監視します
+  - ストリーミングによりNGワードを監視します。
  
 - update tokenモード
   - APIキーを更新するときに使うモードです。
